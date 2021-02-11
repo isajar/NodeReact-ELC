@@ -60,9 +60,9 @@ app.get('/', function(req, res) {
 
 // end-point used to do the reactive search
 app.post('/search', function(req, res) {
-  const answ = getSearched(req.body.text);
-  // if the request body is not null
+  // if the request body is not nul
   if(req.body.text){
+    const answ = getSearched(req.body.text);
     res.json({data:answ});
   }
   
