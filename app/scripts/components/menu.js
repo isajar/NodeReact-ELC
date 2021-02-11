@@ -112,11 +112,17 @@ class Menu extends React.Component {
                         <i className="material-icons close">close</i>
                     </a>
                     <div>
-                        <ul>
+                        <div className="row">
                             {this.state.searchResult.map(function(item) {
-                                return <li key={item._id}>{item.name} - ${item.price}</li>;
+                               return <div key={item._id} className="card">
+                                <h3>{item.name}</h3>
+                                <img src={item.picture} ></img>
+                                <p className="card-price">${item.price}</p>
+                                <p>{item.about}</p>
+                                <p><button >Add to Cart</button></p>
+                            </div>;
                             })}
-                        </ul>
+                        </div>
                     </div>
                 </div>
         
@@ -131,3 +137,4 @@ class Menu extends React.Component {
 
 // Export out the React Component
 module.exports = Menu;
+

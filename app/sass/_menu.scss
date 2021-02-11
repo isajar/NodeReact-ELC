@@ -91,9 +91,52 @@ header.menu {
       font-size: 36px;
       line-height: $lineHeightForSearch;
     }
-    li {
-      margin-top: 10px;
-      font-weight: bold;
+  }
+  .row {
+    width: 100%;
+    text-align: center; // center the content of the container
+  }
+
+  //Cards
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 5px;
+    text-align: center;
+    font-family: arial;
+    display: inline-block;
+
+    h3 {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    button {
+      border: none;
+      outline: 0;
+      padding: 12px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+      margin-top: 5px;
+    }
+    button:hover {
+      opacity: 0.7;
+    }
+    img {
+      width: 100px;
+      height: 250px;
+      margin-top: 2px;
+    }
+    .card-price {
+      color: grey;
+      font-size: 22px;
+      margin-top: 5px;
+      margin-bottom: 5px;
     }
   }
 }
